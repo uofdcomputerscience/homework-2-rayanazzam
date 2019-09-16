@@ -21,14 +21,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func greenButtonTapped(_ sender: Any) {
         user.favoriteColor = .green
         updateResponseLabel()
     }
     
+    @IBAction func redButtonTapped(_ sender: Any) {
+        user.favoriteColor = .red
+        updateResponseLabel()
+    }
     @IBAction func blueButtonTapped(_ sender: Any) {
         user.favoriteColor = .blue
+        updateResponseLabel()
+    }
+    @IBAction func yellowButtonTapped(_ sender: Any) {
+        user.favoriteColor = .yellow
         updateResponseLabel()
     }
     
